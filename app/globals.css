@@ -95,7 +95,16 @@ div[style*="display: inline-block"] {
 /* Ajustes para mobile real: usar width-based scaling y scroll attachment */
 @media (max-width: 768px) {
   .bg-grid-background {
-    background-size: 100% auto;
+    /* Móvil: fondo cubre toda el área y scroll en vez de fixed */
     background-attachment: scroll;
+    background-size: cover;
+    /* Reducir overlay para hacer visible la grid */
+    background-image:
+      linear-gradient(to bottom, var(--background) 0%, rgba(3, 0, 8, 0) 30%),
+      linear-gradient(to top, var(--background) 0%, rgba(3, 0, 8, 0) 30%),
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('/images/background/diagonal-grid.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
