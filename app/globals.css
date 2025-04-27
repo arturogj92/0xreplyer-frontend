@@ -96,5 +96,6 @@ div[style*="display: inline-block"] {
 @media (max-width: 768px) {
   .bg-grid-background {
     background-size: 200% auto;
+    background-attachment: scroll;
   }
 }
