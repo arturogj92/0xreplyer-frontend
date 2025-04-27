@@ -53,6 +53,7 @@ export function UserNav() {
                 src={user.avatar_url} 
                 alt={user.name || user.username} 
                 fill 
+                unoptimized
                 className="object-cover"
               />
             ) : (
