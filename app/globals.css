@@ -92,10 +92,10 @@ div[style*="display: inline-block"] {
   background-attachment: fixed;
 }
 
-/* Ajuste responsive para móvil: reducir tamaño de la grid */
+/* Ajustes para mobile real: usar width-based scaling y scroll attachment */
 @media (max-width: 768px) {
   .bg-grid-background {
-    background-size: 200% auto;
+    background-size: 100% auto;
     background-attachment: scroll;
   }
 }
